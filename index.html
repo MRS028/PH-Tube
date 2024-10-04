@@ -20,7 +20,7 @@
         </div>
         <div class="search">
           <label class="input input-bordered flex items-center gap-2  w-32 lg:w-full">
-            <input type="text" class="grow" placeholder="Search" />
+            <input id="search-input" type="text" class="grow" placeholder="Search" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -45,6 +45,23 @@
     <main>
       <section id="videos" class="w-11/12 mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
+      </section>
+      <section>
+        <!-- You can open the modal using ID.showModal() method -->
+<button id="showmodaldata" class="btn hidden" onclick="my_modal_4.showModal()">open modal</button>
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <div id="modal-content">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
       </section>
     </main>
 
